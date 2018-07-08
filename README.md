@@ -19,14 +19,15 @@ starting from mission-specific event files (NuSTAR, RXTE, XMM, and more).
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/hendrics-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/hendrics-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/hendrics-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/hendrics-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/hendrics-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/hendrics-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/hendrics-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/hendrics-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hendrics/badges/version.svg)](https://anaconda.org/conda-forge/hendrics)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hendrics/badges/downloads.svg)](https://anaconda.org/conda-forge/hendrics)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hendrics-green.svg)](https://anaconda.org/conda-forge/hendrics) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hendrics.svg)](https://anaconda.org/conda-forge/hendrics) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hendrics.svg)](https://anaconda.org/conda-forge/hendrics) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hendrics.svg)](https://anaconda.org/conda-forge/hendrics) |
 
 Installing hendrics
 ===================
