@@ -1,6 +1,6 @@
 {% set name = "hendrics" %}
-{% set version = "4.0rc1.post2" %}
-{% set sha256 = "16956660f9705dc10e881b60073079ae7f4db835d811f2732623816a832c09b3" %}
+{% set version = "5.0" %}
+{% set sha256 = "96c5aacb03423281cf0e25efe19623f77b70cd566827c19f3a167be5a96ff573" %}
 
 package:
   name: {{ name|lower }}
@@ -12,21 +12,23 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
-  script: python setup.py install --offline --single-version-externally-managed --record record.txt
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-    - numpy >=1.11.0
+    - pip
+    - setuptools_scm
+    - numpy >=1.16.0
   run:
     - python
     - astropy
     - scipy >=0.18.0
-    - numpy >=1.11.0
+    - numpy >=1.16.0
+    - numpy 1.17.*  # [py>=38]
     - matplotlib-base >=1.3
-    - stingray >=0.1rc1
+    - stingray >=0.1
 
 test:
   imports:
@@ -37,7 +39,7 @@ about:
   license: 3-clause BSD
   license_family: BSD
   license_file: LICENSE.rst
-  summary: 'High-ENergy Data Reduction Interface from the Command Shell'
+  summary: High-ENergy Data Reduction Interface from the Command Shell
   description: |
     This Astropy-affiliated software package is designed
     to do correctly and fairly easily a **quick-look (spectral-) timing
