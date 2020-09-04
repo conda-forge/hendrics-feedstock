@@ -18,7 +18,7 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - setuptools_scm
     - numpy >=1.11.0
   run:
     - python
