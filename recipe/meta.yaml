@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://github.com/StingraySoftware/hendrics
-  license: 3-clause BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: High-ENergy Data Reduction Interface from the Command Shell
