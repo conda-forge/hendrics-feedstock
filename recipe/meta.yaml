@@ -1,6 +1,6 @@
 {% set name = "hendrics" %}
-{% set version = "5.0" %}
-{% set sha256 = "96c5aacb03423281cf0e25efe19623f77b70cd566827c19f3a167be5a96ff573" %}
+{% set version = "6.0" %}
+{% set sha256 = "bd10bb14c162a2242d8d74ac90d25883bd769131e135e446c18ef6a6c7d36f4f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
