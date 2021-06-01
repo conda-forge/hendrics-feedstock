@@ -26,9 +26,9 @@ requirements:
     - astropy
     - scipy >=0.18.0
     - numpy >=1.16.0
-    - numpy 1.17.*  # [py>=38]
+    - numpy # [py>=38]
     - matplotlib-base >=1.3
-    - stingray >=0.1
+    - stingray >=0.3
 
 test:
   imports:
