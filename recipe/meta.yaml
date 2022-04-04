@@ -1,5 +1,5 @@
 {% set name = "hendrics" %}
-{% set version = "6.0" %}
+{% set version = "7.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hendrics-{{ version }}.tar.gz
-  sha256: bd10bb14c162a2242d8d74ac90d25883bd769131e135e446c18ef6a6c7d36f4f
+  sha256: 446109a09ea96990d7f6d9aa1ced024bb3e4df9e2877598d0a1c40fd30b184c2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - HEN2xspec = hendrics.save_as_xspec:main
@@ -50,16 +50,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
-    - astropy
+    - python >=3.8
+    - astropy >=4.0
     - matplotlib-base
     - numpy
     - scipy
-    - stingray >=0.3
+    - stingray >=1.0
     - tqdm
 
 test:
