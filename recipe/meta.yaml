@@ -59,7 +59,7 @@ requirements:
     - matplotlib-base
     - numpy
     - scipy
-    - stingray >=1.0
+    - stingray >=2.0
     - tqdm
 
 test:
@@ -122,4 +122,3 @@ extra:
   recipe-maintainers:
     - matteobachetti
     - dhuppenkothen
-    - evandromr
