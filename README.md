@@ -155,6 +155,5 @@ Feedstock Maintainers
 =====================
 
 * [@dhuppenkothen](https://github.com/dhuppenkothen/)
-* [@evandromr](https://github.com/evandromr/)
 * [@matteobachetti](https://github.com/matteobachetti/)
 
