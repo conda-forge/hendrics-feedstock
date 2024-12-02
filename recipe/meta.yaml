@@ -60,7 +60,7 @@ requirements:
     - matplotlib-base
     - numpy
     - scipy
-    - stingray >=2.2
+    - stingray >=2.2.3
     - tqdm
 
 test:
