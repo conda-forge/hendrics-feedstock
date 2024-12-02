@@ -1,5 +1,5 @@
 {% set name = "hendrics" %}
-{% set version = "8.0.5" %}
+{% set version = "8.1" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hendrics-{{ version }}.tar.gz
-  sha256: fe4e62fcc8bf351dcd24a4b29065b0e0bc38a83cb2ad6023fa0454137a8e4d82
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hendrics-{{ version }}.tar.gz
+  sha256: 04351e694cd539c390a134f4ded28cbc31e9f460c8742371ff73d6e8f111c14e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - HEN2xspec = hendrics.save_as_xspec:main
