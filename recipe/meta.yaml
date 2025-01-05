@@ -11,7 +11,7 @@ source:
   sha256: 04351e694cd539c390a134f4ded28cbc31e9f460c8742371ff73d6e8f111c14e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - HEN2xspec = hendrics.save_as_xspec:main
@@ -50,12 +50,12 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools_scm
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - astropy-base >=4.0
     - matplotlib-base
     - numpy
@@ -103,6 +103,7 @@ test:
     - HENzsearch --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/StingraySoftware/hendrics
