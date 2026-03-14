@@ -1,14 +1,14 @@
 {% set name = "hendrics" %}
-{% set version = "8.3" %}
+{% set version = "8.4" %}
 
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hendrics-{{ version }}.tar.gz
-  sha256: 044edb3133fa466f52eaac0ee15d11e3c72af1b4b5bf824265fd01bf8843766e
+  sha256: d51d2de8cb310ddf19325cba82e40b3c414c75fd463da0e3e3d67cb11c15800d
 
 build:
   number: 0
@@ -60,7 +60,7 @@ requirements:
     - matplotlib-base
     - numpy
     - scipy
-    - stingray >=2.2.3
+    - stingray >=2.3.2
     - tqdm
 
 test:
