@@ -1,5 +1,5 @@
 {% set name = "hendrics" %}
-{% set version = "8.4" %}
+{% set version = "8.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hendrics-{{ version }}.tar.gz
-  sha256: d51d2de8cb310ddf19325cba82e40b3c414c75fd463da0e3e3d67cb11c15800d
+  sha256: 561c1674147116410e51cd2468632681615686cc76d62be2959ef0bc9aefc5c1
 
 build:
   number: 0
